@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        #about {
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .about-text {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .skill-box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .skill-box h3 {
+            margin-top: 0;
+        }
+    
+        #contact {
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .social-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            transition: background-color 0.3s;
+        }
+        .social-icon:hover {
+            background-color: #555;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav li {
+                margin: 10px 0;
+            }
+            .profile-image {
+                width: 100%;
+                height: 300px;
+            }
+            .skills {
+                grid-template-columns: 1fr;
+            }
+            .social-links {
+                gap: 20px;
+            }
+            .social-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <h1>Sovana Shrestha</h1>
+        <p>Web Developer</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="profile-image">
+           <img src="profile.jpg" alt="Profile photo">      
+            </div>
+            <div class="about-text">
+                <p>Hi! I'm Sovana, a leaner. I enjoy learning new technologies. </p>
+                <p>I have experience with HTML, CSS, and C Programming language. I'm always looking to improve my skills and take on new challenges.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-box">
+                    <h3>HTML & CSS</h3>
+                    <p>I am learning to make well-structured web pages with modern styling.</p>
+                </div>
+                <div class="skill-box">
+                    <h3>C</h3>
+                    <p>I know basics of it and I can work with it.</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Responsive Design</h3>
+                    <p>I build websites that work on all devices and screen sizes.</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Problem Solving</h3>
+                    <p>I enjoy finding solutions to coding challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Connect with me on social media:</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/soooovana/" class="social-icon" target="_blank" title="Instagram">
+                    📷
+                </a>
+                <a href="http://linkedin.com/in/sovana-shrestha-308aa4277" class="social-icon" target="_blank" title="LinkedIn">
+                    💼
+                </a>
+                <a href="https://github.com/sovanashresthaa" class="social-icon" target="_blank" title="GitHub">
+                    🐙
+                </a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
