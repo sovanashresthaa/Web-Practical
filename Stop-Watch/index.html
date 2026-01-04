@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stop Watch</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+
+    .stopwatch {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        width: 320px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .title {
+        margin-bottom: 10px;
+        font-size: 22px;
+        color: #333;
+    }
+
+    #display {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 8px 12px;
+        margin: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .start { background: #4CAF50; color: white; }
+    .stop  { background: #f44336; color: white; }
+    .reset { background: #2196F3; color: white; }
+    .lap   { background: #FF9800; color: white; }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+        max-height: 160px;
+        overflow-y: auto;
+        text-align: left;
+    }
+
+    li {
+        padding: 6px;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+
+<div class="stopwatch">
+    <h2 class="title">Stop Watch</h2>
+    <div id="display">00:00:00</div>
+
+    <button class="start" onclick="start()">Start</button>
+    <button class="stop" onclick="stop()">Stop</button>
+    <button class="reset" onclick="reset()">Reset</button>
+    <button class="lap" onclick="lap()">Lap</button>
+
+    <ul id="laps"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
