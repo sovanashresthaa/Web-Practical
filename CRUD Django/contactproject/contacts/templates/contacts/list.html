@@ -1,0 +1,23 @@
+<h2>Contact List</h2>
+<a href="{% url 'contact_create' %}">Add Contact</a>
+
+<table border="1">
+<tr>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Phone</th>
+  <th>Actions</th>
+</tr>
+
+{% for contact in contacts %}
+<tr>
+  <td>{{ contact.name }}</td>
+  <td>{{ contact.email }}</td>
+  <td>{{ contact.phone }}</td>
+  <td>
+    <a href="{% url 'contact_update' contact.id %}">Edit</a>
+    <a href="{% url 'contact_delete' contact.id %}">Delete</a>
+  </td>
+</tr>
+{% endfor %}
+</table>
